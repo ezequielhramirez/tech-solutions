@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+
+actor User
+actor Admin
+
+rectangle VideoMax {
+    User -- (Search for Videos)
+    User -- (Watch Videos)
+    User -- (Create an Account)
+    User -- (Manage Profile)
+    
+    Admin -- (Manage Videos)
+    Admin -- (Manage Users)
+}
+
+@enduml
